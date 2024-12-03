@@ -3,7 +3,7 @@ body {
     color: #333;
 }
 h1 {
-    color: #d3e8ff;
+    color: #000000;
 }
 
 footer {
@@ -15,5 +15,5 @@ footer {
 }
 
 .bouton-accueil {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
