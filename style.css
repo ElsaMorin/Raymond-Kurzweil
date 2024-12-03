@@ -1,5 +1,5 @@
 body {
-    background-color: #0080ff;
+    background-color: #ffffff;
     color: #333;
 }
 h1 {
@@ -15,5 +15,5 @@ footer {
 }
 
 .bouton-accueil {
-    color: red;
+    color: rgb(255, 255, 255);
 }
