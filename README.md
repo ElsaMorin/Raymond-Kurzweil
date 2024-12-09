@@ -16,3 +16,9 @@ Liste numérotée : <ol><li>Élément 1</li><li>Élément 2</li></ol>
         color: #007bff;
     }
 </style>
+
+
+  <div class="image-haut">
+    <img href="" alt=""><img>
+    <p></p>
+  </div>
