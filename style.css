@@ -36,6 +36,7 @@ h2 {
 .textpage{
     margin-left: 5%;
     margin-right: 5%;
+    text-align: justify;
 }
 
 footer {
