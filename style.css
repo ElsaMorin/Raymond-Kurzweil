@@ -70,6 +70,9 @@ section.top-page {
 .image-gauche, .image-droite{
     display: flex;
     flex-direction: row;
+    height: 30%;
+width: 30%;
+margin-left: 38px;
 }
 
 /* A changer à ajouter pour chaque nouvelle image. */
@@ -82,3 +85,110 @@ section.top-page {
     width: 100%; // Permet de modifier la largeur de l'image
     height: 100%;
 }*/
+
+
+.image-gauche-ray {
+height: 15%;
+width: 15%;
+margin-left: 5%;
+}
+
+
+
+
+
+
+
+/* Carroussel image livre */
+.carrousel {
+    height:400px;
+    width:800;
+    position:relative;
+    margin:200px auto;
+    border:10px solid #000000;
+}
+
+.cadre {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:0;
+    transition: all 0.4 ease-in-out
+}
+
+.fleche{
+    border:solid #0000FF;
+    padding:12px;
+    border-width: 0 5px 5px 0;
+}
+
+.precedent, .suivant{
+    position:absolute;
+    top: 200px;
+}
+
+.precedent{
+    left: 45px;
+    transform: rotate(135deg);
+}
+
+.suivant{
+    right: 45px;
+    transform: rotate(-45deg);
+}
+
+.image_1{
+    z-index:2;
+    opacity:1;
+    background: url("assets/image/img1.jpg");
+    background-size: cover;
+}
+
+.image_2{
+    background: url("assets/image/img2GroupededitionCrown.jpeg");
+    background-size: cover;
+}
+
+.image_3{
+    background: url("assets/image/img3RaymondKurzweil.jpg");
+    background-size: cover;
+}
+
+.image_4{
+    background: url("assets/image/img4RayMondKurzweil.jpg");
+    background-size: cover;
+}
+
+.image_5{
+    background: url("assets/image/img5RaymondKurzweil.jpg");
+    background-size: cover;
+}
+
+.image_6{
+    background: url("assets/image/img6RaymondKurzweil.jpg");
+    background-size: cover;
+}
+.image_7{
+    background: url("assets/image/img7RaymondKurzweil.jpg");
+    background-size: cover;
+}
+
+.image_8{
+    background: url("assets/image/img8RaymondKurzweilRandomHouse.jpg");
+    background-size: cover;
+}
+
+*:target ~ .image_1{
+    opacity:0;
+}
+
+#image_1:target ~ .image_1{
+    opacity: 1;
+}
+
+#image_2:target ~ .image_2, #image_3:target ~ .image_3, #image_4:target ~ .image_4, #image_5:target ~ .image_5, #image_6:target ~ .image_6, #image_7:target ~ .image_7, #image_8:target ~ .image_8 {
+    z-index: 2;
+    opacity: 1;
+}
