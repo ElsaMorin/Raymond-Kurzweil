@@ -1,21 +1,177 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <title>Contact & Sources</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9;
+        }
+        .textpage {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin: 20px 0;
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .contact-form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        .sources {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .sources h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .source-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .source-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .source-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .source-card p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .source-card a {
+            font-size: 14px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .source-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section à gauche -->
     <div class="textpage">
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900" rel="stylesheet">
-        <title>Contact & Sources</title>
-    </head>
-    <body>
-        <a href="index.html"class="bouton-accueil">Accueil</a>
+        <a href="index.html" class="bouton-accueil">Accueil</a>
         <h2>Contact & Sources</h2>
-		<p>Vous pouvez me contacter à l'adresse suivante : <a href="blabla@gmail.com">blabla@gmail.com</a>.</p>
-        <p>Retrouvez ci dessous les sources utilisés pour l'aide à la rédaction de ce site.</p>
+        <p>Retrouvez ci-dessous un formulaire de contact ainsi que les sources utilisées pour ce site.</p>
     </div>
+
+    <!-- Formulaire centré -->
+    <h2>Contactez-nous</h2>
+
+    <form class="contact-form" action="/submit_form" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+    
+    <!-- Section des sources -->
+    <section class="sources">
+        <h2>Sources</h2>
+        <div class="source-cards">
+            <div class="source-card">
+                <h3>Source 1</h3>
+                <p>Site web sur Raymond Kurzweil.</p>
+                <a href="https://www.kurzweiltech.com/aboutray.html" target="_blank">Voir la source</a>
+            </div>
+            <div class="source-card">
+                <h3>Source 2</h3>
+                <p>Wikipédia de Raymond Kurzweil.</p>
+                <a href="https://fr.wikipedia.org/wiki/Raymond_Kurzweil#:~:text=Il%20est%20cr%C3%A9ateur%20de%20plusieurs,la%20prospective%20et%20la%20futurologie" target="_blank">Voir la source</a>
+            </div>
+            <div class="source-card">
+                <h3>Source 3</h3>
+                <p>Site web sur Raymond Kurzweil.</p>
+                <a href="https://www.thekurzweillibrary.com/" target="_blank">Voir la source</a>
+            </div>
+            <div class="source-card">
+                <h3>Source 4</h3>
+                <p>Site web sur Raymond Kurzweil.</p>
+                <a href="https://kurzweil.com/" target="_blank">Voir la source</a>
+            </div>
+            <div class="source-card">
+                <h3>Source 5</h3>
+                <p>Crédit image d'accueil.</p>
+                <a href="https://www.perplexity.ai/page/the-life-of-google-engineering-ayB03mNLRLeRL7or.ogK2A" target="_blank">Voir la source</a>
+            </div>
+            <div class="source-card">
+                <h3>Source 6</h3>
+                <p>Vidéo Youtube sur Raymond Kurzweil.</p>
+                <a href="https://www.youtube.com/watch?v=ywudDnow-Hk" target="_blank">Voir la source</a>
+            </div>
+            <div class="source-card">
+                <h3>Source 7</h3>
+                <p>Vidéo Youtube sur Raymond Kurzweil.</p>
+                <a href="https://www.youtube.com/watch?v=uEztHu4NHrs" target="_blank">Voir la source</a>
+            </div>
+        </div>
+        <p> Les photos de couvertures des livres sont créditées Raymond Kurweil. </p>
+    </section>
 </body>
 </html>
