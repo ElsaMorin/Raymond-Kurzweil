@@ -1,103 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
-  <title>Travaux & Publications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Travaux & Publications</title>
 </head>
+
 <body>
     <div class="textpage">
-        <section class="top-page">
-            <!-- Menu de navigation -->
-            <nav>
-            </br>
-            <a class="bouton-accueil" href="index.html">Accueil</a>
-            <a class="bouton-accueil" href="Biographie.html">Biographie</a>
-              <a class="bouton-accueil" href="TravauxPublications.html">Travaux & Publications</a>
-              <a class="bouton-accueil" href="galerie.html">Galerie</a>
-              <a class="bouton-accueil" href="APropos.html">À Propos</a>
-              <a class="bouton-accueil" href="ContactSources.html">Contact & Sources</a>
-            </nav>
-          </section>
+        <!-- Menu de navigation -->
+        <header class="top-page flex items-center">
+            <div class="p-6 flex">
+                <a href="index.html">
+                    <img src="assets/image/logo.png" alt="Logo" class="h-12" />
+                </a>
+            </div>
+
+            <!-- Mobile -->
+            <div class="dropdown lg:hidden">
+                <span>Menu</span>
+                <nav class="dropdown-content">
+                    <a class="bouton-accueil" href="Biographie.html">Biographie</a>
+                    <a class="bouton-accueil" href="TravauxPublications.html">Travaux & Publications</a>
+                    <a class="bouton-accueil" href="galerie.html">Galerie</a>
+                    <a class="bouton-accueil" href="APropos.html">À Propos</a>
+                    <a class="bouton-accueil" href="ContactSources.html">Contact & Sources</a>
+                </nav>
+            </div>
+
+            <!-- Desktop -->
+            <div class="hidden lg:flex lg:w-full">
+                <nav class="flex w-full justify-end p-4 mr-20 text-xl">
+                    <a class="bouton-accueil" href="Biographie.html">Biographie</a>
+                    <a class="bouton-accueil" href="TravauxPublications.html">Travaux & Publications</a>
+                    <a class="bouton-accueil" href="galerie.html">Galerie</a>
+                    <a class="bouton-accueil" href="APropos.html">À Propos</a>
+                    <a class="bouton-accueil" href="ContactSources.html">Contact & Sources</a>
+                </nav>
+            </div>
+        </header>
         <h2>Travaux & Publications</h2>
-        <p class="textpage">
-            <h3>Ses travaux</h3>
-            <li>En 1970, il fonde la société “Kurzweil Music Systems”. Il est également à l'origine du premier synthétiseur K-250 crée en 1983,  capable de reproduire des sons d'instruments de musique acoustiques.</li></br>
-            <li>En 1976, Raymond Kurzweil réalise sa première grande invention : la « Kurzweil Reading Machine », un dispositif conçu pour les personnes aveugles. Son programme de reconnaissance de caractères, par la suite adapté pour le grand public, reste encore aujourd’hui utilisé par le fabricant d’imprimantes Xerox.</li></br>
-        <li>Il travaille aussi avec Google, son rôle se concentre principalement sur l'intelligence artificielle, notamment l'apprentissage automatique et le traitement automatique du langage.</li></br>
-          
+        <h3>Ses travaux</h3>
+        <ul class="list-disc">
+
+            <li>En 1970, il fonde la société “Kurzweil Music Systems”. Il est également à l'origine du premier
+                synthétiseur K-250 crée en 1983, capable de reproduire des sons d'instruments de musique acoustiques.
+            </li></br>
+            <li>En 1976, Raymond Kurzweil réalise sa première grande invention : la « Kurzweil Reading Machine », un
+                dispositif conçu pour les personnes aveugles. Son programme de reconnaissance de caractères, par la
+                suite adapté pour le grand public, reste encore aujourd’hui utilisé par le fabricant d’imprimantes
+                Xerox.</li></br>
+            <li>Il travaille aussi avec Google, son rôle se concentre principalement sur l'intelligence artificielle,
+                notamment l'apprentissage automatique et le traitement automatique du langage.</li></br>
+        </ul>
         <h3>Ses publications</h3>
         Raymon Kurzweil a sorti 8 livres entre 1990 et 2013.
-        <ul>
+        <ul class="list-disc">
             <li> <U>The Age of Intelligent Machines</U> (1990)</li></br>
             <li> <U>The 10% Solution for a Healthy Life</U> (1993)</li></br>
             <li> <U>The Age of Spiritual Machines : when Computers Exceed Human Intelligence</U> (1999)</li></br>
             <li> <U>Are We Spiritual Machines ? Ray Kurzweil versus the Critics of Strong AI</U> (2002)</li></br>
             <li> <U>Fantastic Voyage: Live Long Enough to Live Forever</U> (2004)</br>
-            Publié en français sous le titre <U>Serons-nous immortels ? : Oméga 3, nanotechnologies, clonage...</U> (2006)</li></br>
+                Publié en français sous le titre <U>Serons-nous immortels ? : Oméga 3, nanotechnologies, clonage...</U>
+                (2006)</li></br>
             <li> <U>The Singularity is Near : When Humans Transcend Biology</U> (2005)</br>
-            Publié en français sous le titre <U>Humanité 2.0 : La Bible du changement</U> (2007)</li></br>
+                Publié en français sous le titre <U>Humanité 2.0 : La Bible du changement</U> (2007)</li></br>
             <li> <U>How to Create a Mind : The Secret of Human Thought Revealed</U> (2013)</li> </br>
             <li> <U>The Singularity Is Nearer: When We Merge with AI</U> (2024) </li></br>
         </ul>
 
         Ainsi qu'un livre de fiction. </br>
-        <ul>
+        <ul class="list-disc">
             <li> <U>Danielle : Chroniques d'une super-héroïne</U> (2019)</li>
-        </ul> 
-    
-    <!-- Carroussel image livre-->
-    <div class="carrousel">
-        <span id="image_1"></span>
-        <span id="image_2"></span>
-        <span id="image_3"></span>
+        </ul>
 
-        <div class="cadre image_1">
-            <a href="#image_3" class="fleche precedent"></a>
-            <a href="#image_2" class="fleche suivant"></a>
-        </div>
-        <div class="cadre image_2">
-            <a href="#image_1" class="fleche precedent"></a>
-            <a href="#image_3" class="fleche suivant"></a>
-        </div>
-        <div class="cadre image_3">
-            <a href="#image_2" class="fleche precedent"></a>
-            <a href="#image_1" class="fleche suivant"></a>
+        <!-- Carroussel image livre-->
 
-        </div>
-    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-    <p>Crédit photos : Raymond Kurzweil</p></br></br>
+        <div class="carrousel">
+            <span id="image_1"></span>
+            <span id="image_2"></span>
+            <span id="image_3"></span>
 
+            <div class="cadre image_1">
+                <a href="#image_3" class="fleche precedent"></a>
+                <a href="#image_2" class="fleche suivant"></a>
+            </div>
+            <div class="cadre image_2">
+                <a href="#image_1" class="fleche precedent"></a>
+                <a href="#image_3" class="fleche suivant"></a>
+            </div>
+            <div class="cadre image_3">
+                <a href="#image_2" class="fleche precedent"></a>
+                <a href="#image_1" class="fleche suivant"></a>
+            </div>
+        </div>
+        <p>Crédit photos : Raymond Kurzweil</p>
         <h3>Il remporte aussi de nombreux prix.</h3>
-            <ul>
-                <li>Première place à l'<b>Exposition internationale des sciences</b> de 1965 pour l'invention de l'ordinateur synthétiseur de musique classique</li></br>
-                <li>Le <b>prix Grace Murray Hopper</b> 1978 de l' Association for Computing Machinery. Ce prix est décerné chaque année à un « jeune professionnel de l'informatique exceptionnel » et est accompagné d'une récompense de 35 000 $. Kurzweil l'a remporté pour son invention « Kurzweil Reading Machine ».</li></br>
-                <li>En 1986, Kurzweil a été nommé <b>président honoraire de l'innovation</b> de la Conférence de la Maison Blanche sur les petites entreprises par le président Reagan.</li></br>
-                <li>En 1987, Kurzweil a reçu un <b>doctorat honorifique en musique</b> du Berklee College of Music . </li></br>
-                <li>En 1988, Kurzweil a été nommé <b>inventeur de l'année</b> par le MIT et le Boston Museum of Science. </li></br>
-                <li>En 1990, Kurzweil a été élu <b>ingénieur de l'année</b> par plus d'un million de lecteurs du magazine Design News et a reçu son troisième prix annuel de réussite technologique.</li></br>
-                <li>Le <b>prix scientifique Dickson</b> 1995.</li></br>
-                <li>Le prix <b>inventeur de l'année</b> 1998 décerné par le Massachusetts Institute of Technology.</li></br>
-                <li>La <b>médaille nationale de la technologie</b> de 1999. Il s'agit de la plus haute distinction que le président des États-Unis puisse décerner à des individus et à des groupes pour avoir été les pionniers de nouvelles technologies, et le président décerne la récompense à sa discrétion. Bill Clinton a remis à Kurzweil la Médaille nationale de la technologie lors d'une cérémonie à la Maison Blanche en reconnaissance du développement par Kurzweil de technologies informatiques pour aider les personnes handicapées.</li></br>
-                <li>Le <b>prix de la technologie du Telluride Tech Festival</b> 2000.</li></br>
-                <li>Le prix <b>Lemelson-MIT</b> 2001 récompense une vie entière consacrée au développement de technologies pour aider les personnes handicapées et enrichir les arts. Un seul prix est décerné chaque année – il est remis à des inventeurs en milieu de carrière qui ont connu un grand succès. Une récompense de 500 000 $ accompagne le prix.</li></br>
-                <li>Kurzweil a été <b>intronisé au Temple de la renommée des inventeurs nationaux</b> en 2002 pour avoir inventé la machine de lecture Kurzweil. L'organisation « honore les femmes et les hommes responsables des grandes avancées technologiques qui rendent possible le progrès humain, social et économique. » Quinze autres personnes ont été intronisées au Temple de la renommée la même année.</li></br>
-                <li>Le prix <b>Arthur C. Clarke Lifetime Achievement Award</b> 2009, pour l'ensemble de sa carrière en tant qu'inventeur et futurologue dans le domaine des technologies informatiques. </li></br>
-                <li>En 2011, Kurzweil a été nommé <b>Senior Fellow du Design Futures Council.</b></li></br>
-                <li>En 2013, Kurzweil a été honoré en tant que <b>lauréat du Silicon Valley Visionary Award</b> le 26 juin par le SVForum.</li></br>
-                <li>En 2014, Kurzweil a reçu le <b>Grand Visionary Award de l'American Visionary Art Museum.</b></li></br>
-                <li>En 2014, Kurzweil a été <b>intronisé membre éminent de l'IEEE.</b></li></br>
-                <li>Kurzweil <b>a reçu 20 doctorats honorifiques</b> en sciences, ingénierie, musique et lettres humaines du Rensselaer Polytechnic Institute, de l'Université Hofstra et d'autres grandes universités, ainsi que des distinctions de trois présidents américains – Clinton, Reagan et Johnson.</li></br>
-                <li>Kurzweil <b>a reçu sept prix cinématographiques nationaux et internationaux</b>, dont le <b>CINE Golden Eagle Award</b> et la médaille d'or pour l'éducation scientifique du Festival international du film et de la télévision de New York.</li></br>
-                <li>Il a prononcé un <b>discours liminaire</b> en 2007 devant l'Église protestante unie du Christ à Hartford, dans le Connecticut, aux côtés de Barack Obama, alors candidat à la présidence. </li></br>
-                <li>Il a été inclus dans <b>la liste Time 100 AI en 2024.</b></li></br>
-                
-            </ul>
-        </p>
-        </div>
-    </body>
+        <ul class="list-disc">
+            <li>Première place à l'<b>Exposition internationale des sciences</b> de 1965 pour l'invention de
+                l'ordinateur synthétiseur de musique classique</li></br>
+            <li>Le <b>prix Grace Murray Hopper</b> 1978 de l' Association for Computing Machinery. Ce prix est
+                décerné chaque année à un « jeune professionnel de l'informatique exceptionnel » et est accompagné
+                d'une récompense de 35 000 $. Kurzweil l'a remporté pour son invention « Kurzweil Reading Machine ».
+            </li></br>
+            <li>En 1986, Kurzweil a été nommé <b>président honoraire de l'innovation</b> de la Conférence de la
+                Maison Blanche sur les petites entreprises par le président Reagan.</li></br>
+            <li>En 1987, Kurzweil a reçu un <b>doctorat honorifique en musique</b> du Berklee College of Music .
+            </li></br>
+            <li>En 1988, Kurzweil a été nommé <b>inventeur de l'année</b> par le MIT et le Boston Museum of Science.
+            </li></br>
+            <li>En 1990, Kurzweil a été élu <b>ingénieur de l'année</b> par plus d'un million de lecteurs du
+                magazine Design News et a reçu son troisième prix annuel de réussite technologique.</li></br>
+            <li>Le <b>prix scientifique Dickson</b> 1995.</li></br>
+            <li>Le prix <b>inventeur de l'année</b> 1998 décerné par le Massachusetts Institute of Technology.</li>
+            </br>
+            <li>La <b>médaille nationale de la technologie</b> de 1999. Il s'agit de la plus haute distinction que
+                le président des États-Unis puisse décerner à des individus et à des groupes pour avoir été les
+                pionniers de nouvelles technologies, et le président décerne la récompense à sa discrétion. Bill
+                Clinton a remis à Kurzweil la Médaille nationale de la technologie lors d'une cérémonie à la Maison
+                Blanche en reconnaissance du développement par Kurzweil de technologies informatiques pour aider les
+                personnes handicapées.</li></br>
+            <li>Le <b>prix de la technologie du Telluride Tech Festival</b> 2000.</li></br>
+            <li>Le prix <b>Lemelson-MIT</b> 2001 récompense une vie entière consacrée au développement de
+                technologies pour aider les personnes handicapées et enrichir les arts. Un seul prix est décerné
+                chaque année – il est remis à des inventeurs en milieu de carrière qui ont connu un grand succès.
+                Une récompense de 500 000 $ accompagne le prix.</li></br>
+            <li>Kurzweil a été <b>intronisé au Temple de la renommée des inventeurs nationaux</b> en 2002 pour avoir
+                inventé la machine de lecture Kurzweil. L'organisation « honore les femmes et les hommes
+                responsables des grandes avancées technologiques qui rendent possible le progrès humain, social et
+                économique. » Quinze autres personnes ont été intronisées au Temple de la renommée la même année.
+            </li></br>
+            <li>Le prix <b>Arthur C. Clarke Lifetime Achievement Award</b> 2009, pour l'ensemble de sa carrière en
+                tant qu'inventeur et futurologue dans le domaine des technologies informatiques. </li></br>
+            <li>En 2011, Kurzweil a été nommé <b>Senior Fellow du Design Futures Council.</b></li></br>
+            <li>En 2013, Kurzweil a été honoré en tant que <b>lauréat du Silicon Valley Visionary Award</b> le 26
+                juin par le SVForum.</li></br>
+            <li>En 2014, Kurzweil a reçu le <b>Grand Visionary Award de l'American Visionary Art Museum.</b></li>
+            </br>
+            <li>En 2014, Kurzweil a été <b>intronisé membre éminent de l'IEEE.</b></li></br>
+            <li>Kurzweil <b>a reçu 20 doctorats honorifiques</b> en sciences, ingénierie, musique et lettres
+                humaines du Rensselaer Polytechnic Institute, de l'Université Hofstra et d'autres grandes
+                universités, ainsi que des distinctions de trois présidents américains – Clinton, Reagan et Johnson.
+            </li></br>
+            <li>Kurzweil <b>a reçu sept prix cinématographiques nationaux et internationaux</b>, dont le <b>CINE
+                    Golden Eagle Award</b> et la médaille d'or pour l'éducation scientifique du Festival
+                international du film et de la télévision de New York.</li></br>
+            <li>Il a prononcé un <b>discours liminaire</b> en 2007 devant l'Église protestante unie du Christ à
+                Hartford, dans le Connecticut, aux côtés de Barack Obama, alors candidat à la présidence. </li></br>
+            <li>Il a été inclus dans <b>la liste Time 100 AI en 2024.</b></li></br>
+
+        </ul>
+    </div>
+</body>
+
 </html>

@@ -7,21 +7,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Biographie</title>
 </head>
 <body>
-    <section class="top-page">
-        <!-- Menu de navigation -->
-        <nav>
-        </br>
-        <a class="bouton-accueil" href="index.html">Accueil</a>
+    
+  <!-- Menu de navigation -->
+  <header class="top-page flex items-center">
+    <div class="p-6 flex">
+      <a href="index.html">
+        <img src="assets/image/logo.png" alt="Logo" class="h-12" />
+      </a>
+    </div>
+
+    <!-- Mobile -->
+    <div class="dropdown lg:hidden">
+      <span>Menu</span>
+      <nav class="dropdown-content">
         <a class="bouton-accueil" href="Biographie.html">Biographie</a>
-          <a class="bouton-accueil" href="TravauxPublications.html">Travaux & Publications</a>
-          <a class="bouton-accueil" href="galerie.html">Galerie</a>
-          <a class="bouton-accueil" href="APropos.html">À Propos</a>
-          <a class="bouton-accueil" href="ContactSources.html">Contact & Sources</a>
-        </nav>
-      </section>
+        <a class="bouton-accueil" href="TravauxPublications.html">Travaux & Publications</a>
+        <a class="bouton-accueil" href="galerie.html">Galerie</a>
+        <a class="bouton-accueil" href="APropos.html">À Propos</a>
+        <a class="bouton-accueil" href="ContactSources.html">Contact & Sources</a>
+      </nav>
+    </div>
+
+    <!-- Desktop -->
+    <div class="hidden lg:flex lg:w-full">
+      <nav class="flex w-full justify-end p-4 mr-20 text-xl">
+        <a class="bouton-accueil" href="Biographie.html">Biographie</a>
+        <a class="bouton-accueil" href="TravauxPublications.html">Travaux & Publications</a>
+        <a class="bouton-accueil" href="galerie.html">Galerie</a>
+        <a class="bouton-accueil" href="APropos.html">À Propos</a>
+        <a class="bouton-accueil" href="ContactSources.html">Contact & Sources</a>
+      </nav>
+    </div>
+  </header>
 
     <!-- Section de texte à gauche -->
     <div class="textpage">

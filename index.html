@@ -1,79 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Raymond-Kurweil</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raymond-Kurweil</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
-	<script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  
-  
-  <section class="top-page">
-    <!-- Menu de navigation -->
-    <nav>
-    </br>
-      <a class="bouton-accueil" href="Biographie.html">Biographie</a>
-      <a class="bouton-accueil" href="TravauxPublications.html">Travaux & Publications</a>
-      <a class="bouton-accueil" href="galerie.html">Galerie</a>
-      <a class="bouton-accueil" href="APropos.html">À Propos</a>
-      <a class="bouton-accueil" href="ContactSources.html">Contact & Sources</a>
-    </nav>
-  </section>
-</br>
-  <!-- Contenu principal -->  
-   <div class="raymond-container">
-     <h1 class="Titre">Raymond </br> KURZWEIL </h1> 
-     <!-- <img classs="background" src="assets/image/kurzweil.jpg"alt="Raymond-Kurweil"> -->
-  </div>
 
-  <div class="image-haut">
-    <img href="" alt=""></img>
-    <p></p>
-  </div>
-  
-  <div class="image-bas">
-    <p></p>
-    <img href="" alt=""></img>
-  </div>
-
-   <!-- Just modif image  et class avec "shrek" mais image Gauche
-  <div class="image-gauche shrek">
-    <img src="https://www.francetvinfo.fr/pictures/KI83JKIWxYVA8ng-cUtYxM6l-z8/1200x1200/2016/08/23/shrek-5.jpg" alt=""></img>
-    <p>La tarte aux fruits</p>
-  </div>
-  -->
-
-  <div class="image-droite">
-    <p></p>
-    <img href="" alt=""></img>
-  </div>
-
-</br>
-<p class="textpage"> Génie de l'invention et maître dans l'art de la prédiction, Raymond Kurzweil, se distingue avant tout comme le principal défenseur de la fusion complète entre l'humain et la machine.</br>
-  Raymond Kurzweil est un inventeur, ingénieur, auteur et futurologue américain, célèbre pour ses avancées en intelligence artificielle et en reconnaissance vocale, ainsi que pour ses prédictions sur l’avenir des technologies et leur impact sur l’humanité.</br>
-  Il est notamment reconnu pour ses travaux sur la "singularité technologique" et ses idées concernant l’allongement de la vie humaine grâce aux innovations technologiques.
-  </p>
-</br>
-  <div class="image-gauche-ray">
-    <img src="https://achievement.org/wp-content/uploads/2016/09/2-72364636_10-scaled.jpg" alt="Raymond Kurzweil"></img>
+  <!-- Menu de navigation -->
+  <header class="top-page flex items-center">
+    <div class="p-6 flex">
+      <a href="index.html">
+        <img src="assets/image/logo.png" alt="Logo" class="h-12" />
+      </a>
     </div>
 
-    <p class="textpage">1986 : L'inventeur Raymond Kurzweil avec un logiciel développé par sa société, affichant des modèles de parole. (Getty)</p>
-  </div>
-  
+    <!-- Mobile -->
+    <div class="dropdown lg:hidden">
+      <span>Menu</span>
+      <nav class="dropdown-content">
+        <a class="bouton-accueil" href="Biographie.html">Biographie</a>
+        <a class="bouton-accueil" href="TravauxPublications.html">Travaux & Publications</a>
+        <a class="bouton-accueil" href="galerie.html">Galerie</a>
+        <a class="bouton-accueil" href="APropos.html">À Propos</a>
+        <a class="bouton-accueil" href="ContactSources.html">Contact & Sources</a>
+      </nav>
+    </div>
 
-<!-- Pied de page -->
-<footer>
-	<p>Copyright &copy; 2024 Designed by Elsa
-    </a></p>
-  </section>https://github.com/ElsaMorin</br>
-</Ri:a></p>
-</footer>
+    <!-- Desktop -->
+    <div class="hidden lg:flex lg:w-full">
+      <nav class="flex w-full justify-end p-4 mr-20 text-xl">
+        <a class="bouton-accueil" href="Biographie.html">Biographie</a>
+        <a class="bouton-accueil" href="TravauxPublications.html">Travaux & Publications</a>
+        <a class="bouton-accueil" href="galerie.html">Galerie</a>
+        <a class="bouton-accueil" href="APropos.html">À Propos</a>
+        <a class="bouton-accueil" href="ContactSources.html">Contact & Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+    <div class="raymond-container h-svh">
+      <div class="Titre">
+        <h2 class="lg:text-7xl">Raymond</h2>
+        <h1 class="lg:text-8xl lg:font-bold text-blue-300">KURZWEIL</h1>
+      </div>
+    </div>
+    <!-- 
+    <div class="image-haut">
+      <img href="" alt=""></img>
+      <p></p>
+    </div>
+
+    <div class="image-bas">
+      <p></p>
+      <img href="" alt=""></img>
+    </div>
+
+    Just modif image  et class avec "shrek" mais image Gauche
+   <div class="image-gauche shrek">
+     <img src="https://www.francetvinfo.fr/pictures/KI83JKIWxYVA8ng-cUtYxM6l-z8/1200x1200/2016/08/23/shrek-5.jpg" alt=""></img>
+     <p>La tarte aux fruits</p>
+   </div>
+
+    <div class="image-droite">
+      <p></p>
+      <img href="" alt=""></img>
+    </div>
+
+    </br> -->
+
+    <div class="flex m-6 w-full justify-center">
+      <div class="flex flex-col-reverse md:flex-row md:inline-flex max-w-screen-lg">
+        <div class="flex-col w-fit">
+          <div class="">
+            <img src="https://achievement.org/wp-content/uploads/2016/09/2-72364636_10-scaled.jpg"
+              alt="Raymond Kurzweil"></img>
+          </div>
+
+          <p class="text-sm text-justify">1986 : L'inventeur Raymond Kurzweil avec un logiciel développé par sa société,
+            affichant des
+            modèles de parole. (Getty)</p>
+        </div>
+        <div class="p-4">
+          <p class="md:text-3xl text-justify"> Génie de l'invention et maître dans l'art de la prédiction, Raymond
+            Kurzweil, se distingue
+            avant tout comme le principal défenseur de la fusion complète entre l'humain et la machine.</br>
+            Raymond Kurzweil est un inventeur, ingénieur, auteur et futurologue américain, célèbre pour ses avancées en
+            intelligence artificielle et en reconnaissance vocale, ainsi que pour ses prédictions sur l'avenir des
+            technologies et leur impact sur l'humanité.</br>
+            Il est notamment reconnu pour ses travaux sur la "singularité technologique" et ses idées concernant
+            l'allongement
+            de la vie humaine grâce aux innovations technologiques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>Copyright &copy; 2024
+      </a></p>
+    </section></br>
+    </Ri:a>
+    </p>
+  </footer>
 
 </body>
+
 </html>

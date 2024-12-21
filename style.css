@@ -1,11 +1,68 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* FIN RESET CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #f4f4f9;
     color: #333;
-  
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -16,6 +73,27 @@ h1 {
 
 h2 {
     color: #000000;
+    font-size: 3rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160x;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .Titre {
@@ -32,11 +110,11 @@ h2 {
     flex-direction: row;
     background-image: url("assets/image/kurzweil.jpg");
     background-size: cover;
-    height: 70vh;
+    background-position-x: center;
 }
 
 .textpage{
-    margin-left: 5%;
+    margin-left: 50px;
     margin-right: 5%;
     text-align: justify;
 }
@@ -52,13 +130,13 @@ footer {
 .bouton-accueil {
     color: rgb(0, 0, 0);
     justify-content: space-between;
-    margin-left: 30px;
+    padding-left: 2rem;
 }
+    
 
 section.top-page {
     background-image: ("kurzweil.jpg");
     background-size: cover;
-    height: 5vh;
 }
 
 .background {
@@ -79,12 +157,12 @@ margin-left: 38px;
 
 /* A changer à ajouter pour chaque nouvelle image. */
 
-/*.shrek{
-    height: 40vh;  // Permet de modifier la hauteur de l'image
-}
+/*
+.shrek{
+    height: 40vh; 
 
 .shrek img{
-    width: 100%; // Permet de modifier la largeur de l'image
+    width: 100%; 
     height: 100%;
 }*/
 
@@ -103,11 +181,20 @@ margin-left: 5%;
 
 /* Carroussel image livre */
 .carrousel {
-    height:400px;
-    width:900px;
-    position:relative;
-    margin:50px auto;
- 
+    height: 400px;
+    width: 900px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carrousel p {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 0.9rem;
+    z-index: 10;
 }
 
 .cadre {
@@ -171,4 +258,98 @@ margin-left: 5%;
     opacity: 1;
 }
 
-
+/* body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+} */
+/* .textpage {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+} */
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+}
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+.sources {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+.sources h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.source-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.source-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.source-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.source-card p {
+    font-size: 14px;
+    color: #555;
+    /* margin-bottom: 10px; */
+}
+.source-card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.source-card a:hover {
+    text-decoration: underline;
+}
