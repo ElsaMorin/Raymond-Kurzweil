@@ -4,7 +4,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -73,7 +73,7 @@ h1 {
 
 h2 {
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
 }
 
 h3{
@@ -120,8 +120,8 @@ h3{
 }
 
 .textpage{
-    margin-left: 50px;
-    margin-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: justify;
 }
 
@@ -357,4 +357,18 @@ margin-left: 5%;
 }
 .source-card a:hover {
     text-decoration: underline;
+}
+
+.biographie-image{
+    width: 50% !important;
+    height: 40% !important;
+}
+
+.biographie-image img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.leRay{
+    font-size: 5rem !important;
 }
