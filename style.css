@@ -114,7 +114,7 @@ h3{
 .raymond-container{
     display: flex;
     flex-direction: row;
-    background-image: url("assets/image/kurzweil.jpg");
+    background-image: url("assets/image/kurzweil.png");
     background-size: cover;
     background-position-x: center;
 }
@@ -237,12 +237,12 @@ margin-left: 5%;
 .image_1{
     z-index:2;
     opacity:1;
-    background: url("assets/image/capture1.png");
+    background: url("assets/image/capture1c.png");
     background-size: cover;
 }
 
 .image_2{
-    background: url("assets/image/capture2.png");
+    background: url("assets/image/capture2c.png");
     background-size: cover;
 }
 
